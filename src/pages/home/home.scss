@@ -1,0 +1,80 @@
+$white: #ffff;
+$heading1: #d0d6f9;
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background: url("../../assets/home/background-home-desktop.jpg");
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  margin-top: -27.5vh;
+  color: $white;
+  padding: 5rem;
+  //   font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bellefair", serif;
+
+  .homeinfo {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    gap: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      gap: 1rem;
+      color: $heading1;
+      letter-spacing: 0.2rem;
+      font-weight: 100;
+
+      span {
+        font-size: 8rem;
+        color: $white;
+        letter-spacing: 0.1rem;
+      }
+    }
+
+    p {
+      max-width: 65%;
+      color: $heading1;
+      letter-spacing: 0.5px;
+      text-align: justify;
+      //   font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+
+  .explore {
+    display: flex;
+    justify-content: center;
+    flex: 0.3;
+    height: 100%;
+    align-items: center;
+
+    button {
+      background: $white;
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 100;
+      height: 12rem;
+      width: 12rem;
+      text-transform: uppercase;
+      border: 2rem solid transparent;
+      border-style: ridge;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        border-color: red;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}

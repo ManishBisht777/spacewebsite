@@ -1,15 +1,12 @@
 import "./App.css";
+import Navbar from "./components/navbar/navbar";
+import Home from "./pages/home/home";
 
 function App() {
   return (
     <div className="App">
-      hello
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laborum
-        quibusdam consequuntur ratione tempore obcaecati a voluptates incidunt
-        neque maiores necessitatibus eos provident, magni, enim eaque culpa?
-        Dolor, possimus explicabo.
-      </p>
+      <Navbar />
+      <Home />
     </div>
   );
 }

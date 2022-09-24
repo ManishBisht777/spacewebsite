@@ -149,9 +149,21 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .planet h3 {
-    font-size: 1rem;
+  .planet .planetnav {
     margin-top: 3rem;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .planet .planetnav h3 {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .planet .planetnav ul {
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: flex-start;
   }
   .planet .planetbox {
     flex-direction: column;

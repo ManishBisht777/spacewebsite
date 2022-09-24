@@ -5,6 +5,9 @@ nav {
   padding: 3rem;
   padding-right: 0;
 }
+nav .logo {
+  z-index: 10;
+}
 nav ul {
   display: flex;
   gap: 3rem;
@@ -14,6 +17,7 @@ nav ul {
   -webkit-backdrop-filter: blur(14px) saturate(134%);
   background-color: rgba(151, 151, 151, 0.04);
   padding: 0rem 4rem;
+  z-index: 10;
 }
 nav ul li {
   list-style: none;
@@ -32,10 +36,12 @@ nav ul li a {
   display: flex;
   gap: 0.5rem;
   text-transform: uppercase;
+  z-index: 10;
 }
 nav ul li a span {
   font-weight: bolder;
   color: #fff;
+  z-index: 10;
 }
 nav ul::before {
   content: "";
@@ -45,4 +51,14 @@ nav ul::before {
   background: rgba(151, 151, 151, 0.6862745098);
   position: absolute;
   left: -95%;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0;
+    padding-left: 1rem;
+  }
+  nav ul::before {
+    display: none;
+  }
 }/*# sourceMappingURL=navbar.css.map */

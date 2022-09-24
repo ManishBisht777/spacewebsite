@@ -5,6 +5,10 @@ nav {
   padding: 3rem;
   padding-right: 0;
 
+  .logo {
+    z-index: 10;
+  }
+
   ul {
     display: flex;
     gap: 3rem;
@@ -14,6 +18,7 @@ nav {
     -webkit-backdrop-filter: blur(14px) saturate(134%);
     background-color: rgba(151, 151, 151, 0.04);
     padding: 0rem 4rem;
+    z-index: 10;
     li {
       list-style: none;
       padding: 1.5rem 0;
@@ -32,10 +37,12 @@ nav {
         display: flex;
         gap: 0.5rem;
         text-transform: uppercase;
+        z-index: 10;
 
         span {
           font-weight: bolder;
           color: #fff;
+          z-index: 10;
         }
       }
     }
@@ -48,6 +55,17 @@ nav {
       background: #979797af;
       position: absolute;
       left: -95%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0;
+    padding-left: 1rem;
+
+    ul::before {
+      display: none;
     }
   }
 }

@@ -1,9 +1,20 @@
 import React from "react";
 import "./home.css";
+import homedesktop from "../../assets/home/background-home-desktop.jpg";
+import hometablet from "../../assets/home/background-home-tablet.jpg";
+import homephone from "../../assets/home/background-home-mobile.jpg";
 
 const Home = () => {
   return (
     <main className="home">
+      <div className="homebg">
+        <picture>
+          <source media="(min-width: 1000px)" srcSet={homedesktop} />
+          <source media="(min-width: 768px)" srcSet={hometablet} />
+          <img src={homephone} alt="homebg" />
+        </picture>
+      </div>
+
       <div className="homeinfo">
         <h3>
           SO, YOU WANT TO TRAVEL TO <span>Space</span>

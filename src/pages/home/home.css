@@ -2,14 +2,25 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  background: url("../../assets/home/background-home-desktop.jpg");
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   top: 0;
-  margin-top: -27.5vh;
+  margin-top: -27vh;
   color: white;
   padding: 5rem;
-  font-family: "Bellefair", serif;
+}
+.home .homebg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .homebg picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home .homeinfo {
   display: flex;
@@ -26,23 +37,27 @@
   color: #d0d6f9;
   letter-spacing: 0.2rem;
   font-weight: 100;
+  font-family: "Barlow Condensed", sans-serif;
+  z-index: 10;
 }
 .home .homeinfo h3 span {
   font-size: 8rem;
   color: white;
   letter-spacing: 0.1rem;
+  font-family: "Bellefair", serif;
 }
 .home .homeinfo p {
   max-width: 65%;
   color: #d0d6f9;
   letter-spacing: 0.5px;
   text-align: justify;
+  font-family: "Barlow Condensed", sans-serif;
+  z-index: 10;
 }
 .home .explore {
   display: flex;
   justify-content: center;
   flex: 0.3;
-  height: 100%;
   align-items: center;
 }
 .home .explore button {
@@ -51,18 +66,43 @@
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  z-index: 10;
+  box-sizing: content-box;
   align-items: center;
   font-size: 1rem;
   font-weight: 100;
-  height: 12rem;
-  width: 12rem;
-  text-transform: uppercase;
+  height: 10rem;
+  width: 10rem;
   border: 2rem solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border-style: ridge;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 .home .explore button:hover {
-  border-color: red;
+  border-color: rgba(128, 128, 128, 0.616);
   transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10.3vh;
+    padding-top: 5rem;
+  }
+  .home .homeinfo {
+    justify-content: center;
+    align-items: center;
+  }
+  .home .homeinfo h3 {
+    text-align: center;
+  }
+  .home .homeinfo p {
+    width: 40%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=home.css.map */

@@ -102,7 +102,7 @@ $heading1: #d0d6f9;
 
 @media screen and (max-width: 1000px) {
   .home {
-    padding: 2rem;
+    padding: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -115,10 +115,24 @@ $heading1: #d0d6f9;
 
       h3 {
         text-align: center;
+
+        span {
+          font-size: 3rem;
+        }
       }
       p {
-        width: 40%;
+        width: 100%;
         text-align: center;
+        font-size: 1rem;
+      }
+    }
+
+    .explore {
+      margin-top: 2rem;
+      button {
+        font-size: 0.8rem;
+        height: 5rem;
+        width: 5rem;
       }
     }
   }

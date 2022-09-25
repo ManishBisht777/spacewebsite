@@ -4,11 +4,31 @@ nav {
   align-items: center;
   padding: 3rem;
   padding-right: 0;
+  overflow-x: hidden;
 
   .logo {
     z-index: 10;
   }
 
+  .navicon {
+    z-index: 10;
+    margin: 1rem;
+  }
+
+  .closeicon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .mobilebar {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+  }
   ul {
     display: flex;
     gap: 3rem;
@@ -66,6 +86,54 @@ nav {
 
     ul::before {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 1rem;
+    padding-right: 0;
+
+    .logo {
+      scale: 0.7;
+    }
+
+    .navlinks {
+      ul {
+        display: none;
+      }
+    }
+
+    .mobilebar {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+      height: 100%;
+      width: 80%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(14px) saturate(134%);
+      -webkit-backdrop-filter: blur(14px) saturate(134%);
+      background-color: rgba(151, 151, 151, 0.04);
+
+      ul {
+        flex-direction: column;
+        gap: 1rem;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        background-color: transparent;
+
+        li {
+          padding: 0.5rem 0;
+        }
+      }
     }
   }
 }

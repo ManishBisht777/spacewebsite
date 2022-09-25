@@ -4,9 +4,26 @@ nav {
   align-items: center;
   padding: 3rem;
   padding-right: 0;
+  overflow-x: hidden;
 }
 nav .logo {
   z-index: 10;
+}
+nav .navicon {
+  z-index: 10;
+  margin: 1rem;
+}
+nav .closeicon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+nav .mobilebar {
+  display: none;
+}
+nav .hamburger {
+  display: none;
+  flex-direction: column;
 }
 nav ul {
   display: flex;
@@ -60,5 +77,44 @@ nav ul::before {
   }
   nav ul::before {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 1rem;
+    padding-right: 0;
+  }
+  nav .logo {
+    scale: 0.7;
+  }
+  nav .navlinks ul {
+    display: none;
+  }
+  nav .mobilebar {
+    display: flex;
+  }
+  nav .hamburger {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(14px) saturate(134%);
+    -webkit-backdrop-filter: blur(14px) saturate(134%);
+    background-color: rgba(151, 151, 151, 0.04);
+  }
+  nav .hamburger ul {
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background-color: transparent;
+  }
+  nav .hamburger ul li {
+    padding: 0.5rem 0;
   }
 }/*# sourceMappingURL=navbar.css.map */

@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://spacevisit.netlify.app/technology)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/react-czAUWNjvuy)
+- Live Site URL: [Live](https://spacevisit.netlify.app/technology)
 
 ## My process
 

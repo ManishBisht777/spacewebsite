@@ -26,12 +26,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/crew">
               <span>03</span> Crew
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/technology">
               <span>04</span> Technology
             </Link>
           </li>
@@ -72,12 +72,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/">
+                <Link to="/crew">
                   <span>03</span> Crew
                 </Link>
               </li>
               <li>
-                <Link to="/">
+                <Link to="/technology">
                   <span>04</span> Technology
                 </Link>
               </li>

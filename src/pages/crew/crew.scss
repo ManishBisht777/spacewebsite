@@ -1,0 +1,158 @@
+$white: #ffff;
+$heading1: #979797;
+
+.crew {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  padding: 5rem;
+  top: 0;
+
+  .crewbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    picture {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .crewinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    font-family: "Bellefair", serif;
+
+    .heading {
+      font-size: 1.2rem;
+      display: flex;
+      text-transform: uppercase;
+      gap: 1rem;
+      align-items: center;
+      color: $white;
+      letter-spacing: 0.2rem;
+      font-weight: 100;
+      z-index: 10;
+      margin-bottom: 3rem;
+
+      span {
+        color: $heading1;
+        letter-spacing: 0.1rem;
+      }
+    }
+
+    .role {
+      font-size: 1.2rem;
+      color: $heading1;
+      text-transform: uppercase;
+      font-family: "Bellefair", serif;
+      z-index: 10;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      color: $white;
+      text-transform: uppercase;
+      font-family: "Bellefair", serif;
+      z-index: 10;
+    }
+
+    .bio {
+      max-width: 50%;
+      color: $heading1;
+      letter-spacing: 0.5px;
+      text-align: justify;
+      font-family: "Barlow Condensed", sans-serif;
+      z-index: 10;
+
+      //   font-family: "Barlow Condensed", sans-serif;
+    }
+  }
+
+  .style {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    button {
+      width: 0.7rem;
+      height: 0.7rem;
+      background: white;
+      z-index: 10;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .crewimg {
+    width: 30%;
+    margin-bottom: -5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 10;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crew {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 10rem;
+
+    .crewinfo {
+      width: 100%;
+      gap: 0.5rem;
+      align-items: center;
+      position: relative;
+
+      .heading {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+        position: absolute;
+        top: -35rem;
+      }
+
+      .role {
+        font-size: 1rem;
+      }
+
+      .name {
+        font-size: 1.5rem;
+      }
+
+      .bio {
+        max-width: 100%;
+      }
+      .style {
+        position: absolute;
+        top: 1rem;
+        margin-top: -3rem;
+      }
+    }
+
+    .crewimg {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+}

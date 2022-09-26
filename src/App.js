@@ -5,6 +5,8 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Planet from "./pages/destination/planet";
 import Dest from "./components/destination/dest";
 import data from "./data/data.json";
+import Crew from "./pages/crew/crew";
+import Tech from "./pages/technology/tech";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           />
           <Route path="titan" element={<Dest props={data.destinations[3]} />} />
         </Route>
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Tech />} />
       </Routes>
     </div>
   );
